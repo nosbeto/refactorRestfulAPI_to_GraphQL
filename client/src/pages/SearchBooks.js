@@ -87,7 +87,7 @@ const SearchBooks = () => {
 
   return (
     <>
-      <div className="text-light bg-dark p-5">
+      <div fluid className='text-light bg-dark pt-5'>
         <Container>
           <h1>Search for Books!</h1>
           <Form onSubmit={handleFormSubmit}>
@@ -113,7 +113,7 @@ const SearchBooks = () => {
       </div>
 
       <Container>
-        <h2 className='pt-5'>
+        <h2>
           {searchedBooks.length
             ? `Viewing ${searchedBooks.length} results:`
             : 'Search for a book to begin'}
